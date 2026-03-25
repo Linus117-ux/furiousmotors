@@ -30,6 +30,8 @@ const handlesubmit=async(e)=>{
         setSuccess(response.data.message)
         setLoading("")
     } catch (error) {
+        setError(error.message)
+        setLoading("")
         
     }
 }
@@ -38,7 +40,7 @@ const handlesubmit=async(e)=>{
 
     return(
        <div className="row mt-2 justify-content-center py-5">
-        <div className="card shadow-lg border-0 rounded-4 col-md-6 p-4">
+        <div className="card shadow-lg border-0 rounded-4 col-md-6 p-4 ">
             <h1 className="text-dark fw-bold">Add products</h1>
             <p className="text-muted">Fill in all the required fields</p>
             {/* bind the states  */}

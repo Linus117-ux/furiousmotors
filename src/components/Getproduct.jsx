@@ -26,6 +26,8 @@ const Getproduct=()=>{
             setProduct(response.data)
             setLoading("")
         } catch (error) {
+            setError(error.message)
+            setLoading("")
             
         }
     }
@@ -50,8 +52,8 @@ const Getproduct=()=>{
         {/* map here  */}
         {products.map(singleproduct=>(
             
-            <div className="col-md-3  md-4">
-            <div className="card shadow-lg h-100 ">
+            <div className="col-md-3  md-4 mb-4">
+            <div className="card shadow-lg h-100  ">
 
             {/* image goes here  */}
             <img src={imagepath + singleproduct.product_photo} alt="" style={{height:"300px" , objectFit:"cover"}}/>

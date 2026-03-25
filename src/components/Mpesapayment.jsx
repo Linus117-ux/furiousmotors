@@ -26,7 +26,7 @@ const Mpesapayment=()=>{
         setSuccess(response.data.message)
         setLoading("")
        } catch (error) {
-        setError("Somehting went wrong")
+        setError(error.message)
         setLoading("")
        }
     }

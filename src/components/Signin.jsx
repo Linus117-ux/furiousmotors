@@ -1,6 +1,6 @@
 import axios from "axios"
 import React, {useState} from "react"
-import { data ,  Link , useNavigate} from "react-router-dom"
+import { Link , useNavigate} from "react-router-dom"
 
 
 
@@ -44,7 +44,8 @@ const Signin=()=>{
                 setSuccess(response.data.message)
             }
         } catch(error){
-
+            setError(error.message)
+            setLoading("")
         }
         
     }
@@ -71,7 +72,7 @@ const Signin=()=>{
                     
                     <p>
                         Don't have an account?  
-                        <a href="/Signup">Sign Up</a>
+                         <Link to="/signup">Sign up</Link>
                     </p>
                 </form>
             </div>
