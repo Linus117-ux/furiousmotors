@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,7 +8,6 @@ import Signin from './components/Signin';
 import Addproduct from './components/Addproduct';
 import Getproduct from './components/Getproduct';
 import Mpesapayment from './components/Mpesapayment';
-import Test from './components/Test';
 
 import { BrowserRouter,Routes,Route,Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
