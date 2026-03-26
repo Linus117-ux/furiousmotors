@@ -33,7 +33,7 @@ const Mpesapayment=()=>{
 
 
     return(
-       <div className="row justify-content-center">
+       <div className="row mt-1 justify-content-center d-flex align-items-center min-vh-100">
         <h1 className="text-info    ">Make payment - Lipa na mpesa</h1>
         <h2 className="text-warning">{loading}</h2>
         <h2 className="text-success">{success}</h2>

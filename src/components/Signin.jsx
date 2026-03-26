@@ -50,7 +50,7 @@ const Signin=()=>{
         
     }
     return(
-        <div className="row mt-1 justify-content-center container-fluid">
+        <div className="row mt-1 justify-content-center d-flex align-items-center min-vh-100">
             <div className="col-md-6 card shadow p-5 bg-grey ">
                 <h1 style={{ color: "#38bdf8" }}>Sign in</h1>
                 {/* bind the states  */}

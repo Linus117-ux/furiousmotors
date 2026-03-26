@@ -39,7 +39,7 @@ const handlesubmit=async(e)=>{
 
 
     return(
-       <div className="row mt-2 justify-content-center py-5">
+       <div className="row mt-1 justify-content-center d-flex align-items-center min-vh-100">
         <div className="card shadow-lg border-0 rounded-4 col-md-6 p-4 ">
             <h1 className="text-dark fw-bold">Add products</h1>
             <p className="text-muted">Fill in all the required fields</p>

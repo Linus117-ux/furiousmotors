@@ -2,7 +2,7 @@ import React from 'react'
 
 const Carousel = () => {
   return (
-    <section class="row">
+    <section class="rowrow mt-1 justify-content-center d-flex align-items-center min-vh-50">
     <div class="col-md-12">
         {/* <!-- a division containing carousel content --> */}
         <div class="carousel slide"  id="mycarousel" data-bs-ride="carousel">

@@ -42,7 +42,7 @@ const Getproduct=()=>{
 
 
     return(
-      <div className="row container-fluid">
+      <div className="min-vh-1 p-5">
         {/* carousel goes here  */}
         <Carousel/>
         <h1 className="text-info ">Available products</h1>
@@ -50,13 +50,15 @@ const Getproduct=()=>{
         <h2 className="text-warning">{loading}</h2>
         <h2 className="text-danger">{error}</h2>
         {/* map here  */}
+        <div className="row justify-content-center">
+
         {products.map(singleproduct=>(
             
-            <div className="col-md-3  md-4 mb-4">
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div className="card shadow-lg h-100  ">
 
             {/* image goes here  */}
-            <img src={imagepath + singleproduct.product_photo} alt="" style={{height:"300px" , objectFit:"cover"}}/>
+            <img src={imagepath + singleproduct.product_photo} alt="" style={{height:"300px" , objectFit:"cover"}} className="card-img-top"/>
             <div className="card-body">
                 <h3 className="text-info">{singleproduct.product_name}</h3>
                 <p>{singleproduct.product_description}</p>
@@ -66,6 +68,7 @@ const Getproduct=()=>{
             </div>
         </div>
             ))}
+            </div>
       </div>
     )
 }

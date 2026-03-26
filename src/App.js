@@ -9,7 +9,7 @@ import Addproduct from './components/Addproduct';
 import Getproduct from './components/Getproduct';
 import Mpesapayment from './components/Mpesapayment';
 
-import { BrowserRouter,Routes,Route,Link } from 'react-router-dom';
+import { BrowserRouter,Routes,Route , Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 function App() {
   return (
@@ -25,11 +25,11 @@ function App() {
      
       {/* nav link  */}
       <nav className='text-center'>
-        <Link to="/" className='btn btn-info m-1'>Getproduct component</Link>
+        {/* <Link to="/" className='btn btn-info m-1'>Getproduct component</Link>
         <Link to="/Signup" className='btn btn-primary m-1'> Signup component</Link>
         <Link to="/Signin" className='btn btn-primary m-1'>Signin component</Link>
         <Link to="/Addproduct" className='btn btn-info m-1'>Addproduct component</Link>
-        
+         */}
         
       </nav>
       {/* Routes  */}
