@@ -9,7 +9,7 @@ import Addproduct from './components/Addproduct';
 import Getproduct from './components/Getproduct';
 import Mpesapayment from './components/Mpesapayment';
 
-import { BrowserRouter,Routes,Route , Link } from 'react-router-dom';
+import { BrowserRouter,Routes,Route  } from 'react-router-dom';
 import Navbar from './components/Navbar';
 function App() {
   return (
