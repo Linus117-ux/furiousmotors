@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom"
 
 const Mpesapayment=()=>{
     const {singleproduct} = useLocation().state|| {}
-    const imagepath="http://linushiggs.alwaysdata.net/static/images/"
+    const imagepath="https://linushiggs.alwaysdata.net/static/images/"
     // We declare the states here 
     const[loading, setLoading]=useState("")
     const[success, setSuccess]=useState("")

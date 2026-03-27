@@ -36,7 +36,7 @@ const Getproduct=()=>{
         getproducts()
     },[])
     console.log(products);
-    const imagepath="http://linushiggs.alwaysdata.net/static/images/"
+    const imagepath="https://linushiggs.alwaysdata.net/static/images/"
     
     
 
