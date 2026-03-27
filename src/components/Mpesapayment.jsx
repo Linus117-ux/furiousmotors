@@ -22,7 +22,7 @@ const Mpesapayment=()=>{
        formdata.append("amount" , singleproduct.product_cost)
        formdata.append("phone" , phone)
        try {
-        const response= await axios.post("http://linushiggs.alwaysdata.net/api/mpesa_payment" , formdata)
+        const response= await axios.post("https://linushiggs.alwaysdata.net/api/mpesa_payment" , formdata)
         setSuccess(response.data.message)
         setLoading("")
        } catch (error) {

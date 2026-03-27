@@ -2,6 +2,7 @@ import axios from "axios"
 import React, {useState , useEffect} from "react"
 import { useNavigate } from "react-router-dom"
 import Carousel from "./Carousel";
+import Footer from "./Footer";
 
 
 
@@ -22,7 +23,7 @@ const Getproduct=()=>{
     const getproducts=async()=>{
         setLoading("Please wait as products load")
         try {
-            const response=await axios.get("http://linushiggs.alwaysdata.net/api/getproduct")
+            const response=await axios.get("https://linushiggs.alwaysdata.net/api/getproduct")
             setProduct(response.data)
             setLoading("")
         } catch (error) {
@@ -63,12 +64,14 @@ const Getproduct=()=>{
                 <h3 className="text-info">{singleproduct.product_name}</h3>
                 <p>{singleproduct.product_description}</p>
                 <b className="text-warning">ksh{singleproduct.product_cost}</b> <br />
-                <button className="btn btn-info w-100 rounded-pill py-3 fw-bold mt-3"  onClick={()=>navigate("/makepayment" ,{state:{singleproduct}})}>purchase now </button>
+                <button className="btn btn-outline-info w-100 rounded-pill py-3 fw-bold mt-3"  onClick={()=>navigate("/makepayment" ,{state:{singleproduct}})}>purchase now </button>
             </div>
             </div>
         </div>
             ))}
-            </div>
+            </div> <hr />
+            {/* Footer goes here */}
+            <Footer/>
       </div>
     )
 }
